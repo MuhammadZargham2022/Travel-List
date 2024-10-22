@@ -10,7 +10,7 @@ const Form = ({ onAddItems }) => {
       e.preventDefault();
   
       const newItem = { description, quantity, packed: false, id: Date.now() };
-      console.log(newItem);
+
       onAddItems(newItem);
       setQuantity(1);
       setDescription("");
